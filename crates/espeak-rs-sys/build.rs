@@ -222,6 +222,9 @@ fn main() {
         config.define("USE_LIBPCAUDIO", "OFF");
     }
 
+    config.define("CMAKE_FIND_USE_CMAKE_SYSTEM_PATH", "OFF");
+    config.define("CMAKE_SYSTEM_IGNORE_PREFIX_PATH", "/usr/lib");
+
     // General
     config
         .profile(&profile)
